@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+	font: normal 16px arial, Helvetica, sand-sarif;
+	background: url(background4.jpg);
+}
+
+.container-fluid > row {
+	background-color: #3b483c;
+}
+#particles-js {
+
+	
+	height: 400px;
+	margin-top: 100px;
+	margin-bottom: 100px
+
+}
+
+#login{
+	background:#fff;
+	opacity: .4;
+	padding: 1em;
+	border: #ccc 2px solid;
+	position: absolute;
+	
+	
+}
+
+#login input[type="text"], #login 
+input[type="password"]{
+	padding: 7px;
+	margin-bottom: 10px;
+	border: 1px #ccc solid;
+}

@@ -1,0 +1,32 @@
+{
+	"particles":{
+		"number":{
+			"value":200
+		},
+		"color" : {
+			"value": "#fff"
+		},
+		"shape":{
+			"type":"circle"
+		},
+		"opacity" : {
+			"value":0.8,
+			"random":false,
+			"anim":{
+				"enable":false,
+				"speed":8
+			}
+
+		},
+		"size":{
+			"value": 10,
+			"random": false,
+			"anim":{
+				"enable": false,
+				"speed":200
+
+			}
+		}
+	}
+}
+

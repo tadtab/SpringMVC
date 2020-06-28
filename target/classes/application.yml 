@@ -1,0 +1,5 @@
+amazonProperties:
+  endpointUrl: https://s3.us-east-2.amazonaws.com
+  accessKey: AKIAJZIKWLSHVFLYREWA
+  secretKey: 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
+  bucketName: uploads051218

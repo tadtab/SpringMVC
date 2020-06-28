@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory >
+  <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+  <property name="hibernate.connection.password">Tadele@23</property>
+  <property name="hibernate.connection.url">jdbc:mysql://ec2-54-175-142-100.compute-1.amazonaws.com:3306/4th2019?serverTimezone=UTC</property>
+  <!-- <property name="hibernate.connection.url">jdbc:mysql://gotera.cqb9opmrlx1c.us-east-1.rds.amazonaws.com/Nehase112018</property> -->
+  <property name="connection.autoReconnect">true</property>
+  <property name="hibernate.connection.username">tadtab2</property>
+  <property name="hibernate.hbm2ddl.auto">create</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <!-- <property name="hibernate.c3p0.max_size">40</property> -->
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.format_sql">true</property>
+  <property name="hibernate.use_sql_comments">true</property>
+  <property name="hibernate.cache.use_second_level_cache">true</property>
+  <mapping class="com.tadtab.core.pojo.Product"/>
+  <mapping class="com.tadtab.core.pojo.AttachmentFile"/>
+  <mapping class="com.tadtab.core.authentication.User" />
+  <mapping class="com.tadtab.core.pojo.ContactUsMessage"/>
+  <mapping class="com.tadtab.core.authentication.AutoUser" />
+  <mapping class="com.tadtab.core.pojo.Post"/>
+  
+  <mapping class="com.tadtab.core.pojo.Attachment"/>
+  <mapping class="com.tadtab.core.pojo.Image"/>
+  <mapping class="com.tadtab.core.pojo.ShoppingCart"/>
+  
+ 
+</session-factory>
+</hibernate-configuration>

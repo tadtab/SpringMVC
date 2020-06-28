@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.8.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+	
+	
+	<bean id="productBean" class="com.tadtab.core.pojo.Product"/>
+	<bean id="user" class="com.tadtab.core.authentication.User"/>
+	<bean id="attachmentFile" class="com.tadtab.core.pojo.AttachmentFile" />
+	<bean id="contactMessage" class="com.tadtab.core.pojo.ContactUsMessage"/>
+	<bean id="braintreeGatewayFactory" class="com.tadtab.core.pojo.BraintreeGatewayFactory"/>
+	<bean id="post" class="com.tadtab.core.pojo.Post" />
+	
+	<bean id="productDao" class="com.tadtab.dao.ProductDAO" />
+	<bean id="userDao" class="com.tadtab.dao.UserDAO"/>
+	<bean id="cartDao" class="com.tadtab.dao.CartDAO"/>
+	<bean id="messageHandler" class="com.tadtab.dao.ContactMessageDAO"/>
+	<bean id="gateWayService" class="com.tadtab.dao.GateWayService"/>
+	<bean id="postDao" class="com.tadtab.dao.PostDao"/>
+	<bean id="autoUser" class="com.tadtab.core.authentication.AutoUser"/>
+	<bean id="attachment" class="com.tadtab.core.pojo.Attachment"/>
+	<bean id="image" class="com.tadtab.core.pojo.Image" />
+	
+	<bean id="customeUserDetailsService" class="com.tadtab.security.CustomeUserDetailsService" />
+	<bean id="customeAuthenticationProvider" class="com.tadtab.core.authentication.CustomeAuthenticationProvider" />
+
+	<bean id="" class="com.tadtab.dao.AutoUserRepository"/>
+	
+</beans>
