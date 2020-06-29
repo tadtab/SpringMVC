@@ -140,14 +140,6 @@ public class AutoUser implements UserDetails {
 	}
 
 
-	/*public List<Post> getPostList() {
-		return postList;
-	}
-
-	public void setPostList(List<Post> postList) {
-		this.postList = postList;
-	}*/
-
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		return AuthorityUtils.createAuthorityList(this.role);
